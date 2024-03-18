@@ -10,7 +10,7 @@ const formatTime = (timeInSeconds: number) => {
     const minuteInString = minute.toString().padStart(2,"0");
     const secondsInString = seconds.toString().padStart(2,"0");
 
-    return `${hourInString}:${minuteInString}:${secondsInString}`;
+    return `${hourInString} : ${minuteInString} : ${secondsInString}`;
 }
 
 const Stopwatch = () => {
