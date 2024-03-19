@@ -3,6 +3,7 @@
 @import "products";
 @import "charts";
 @import "dashboardApp";
+@import "mediaquery";
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -147,6 +148,37 @@ a{
       cursor: not-allowed;
     }
   }
+}
+
+#hamburger {
+  display: grid;
+  place-items: center;
+  @include square(3rem);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(44, 104, 255);
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+#close-sidebar{
+  width: 30%;
+  margin: 1rem;
+  display: flex;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(168, 2, 2);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
 }
 
 
